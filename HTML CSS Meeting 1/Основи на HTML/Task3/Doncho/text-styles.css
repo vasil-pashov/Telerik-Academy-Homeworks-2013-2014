@@ -1,0 +1,30 @@
+a.link
+{
+	color: #6199DF;
+	margin-right: 70px;
+}
+
+a.link:visited
+{
+	color: grey;
+}
+
+div.pageName
+{
+	color: #1A3264;
+	font-family: Calibri;
+	font-style: italic;
+}
+
+div.pageContent
+{
+	color: #1A3264;
+	font-family: Calibri;
+	font-style: italic;
+}
+
+div.information
+{
+	color: #1A3264;
+	font-family: Calibri;
+}

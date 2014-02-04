@@ -1,0 +1,67 @@
+table.inner 
+{
+	border-style:solid;
+	border-width:2px;
+	padding-right: 8px;
+	padding-bottom: 12px;
+}
+
+table.field
+{
+	font-family: Corbel;
+	font-size: 12pt;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+fieldset.cell
+{
+	font-family: Calibri;
+	font-size: 13pt;
+	//font-weight: bold;
+	padding: 0;
+	width: 205px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	height: 122px;
+}
+
+td.productPicture
+{
+	background-image: url("McBook.png");
+	background-repeat: no-repeat;
+	background-position: 4px 0;
+	width: 108px;
+}
+
+td.out
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: center;
+}
+
+a.brand
+{
+	font-weight: bold;
+	color: #00AFF0;
+	font-family: Calibri;
+	font-size: 19pt;
+}
+
+td.brands
+{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	text-align:center;
+	padding: 6px;
+}
+
+td.sliders
+{
+	padding:10px;
+	font-family: Corbel;
+	font-size: 18pt;
+	line-height: 0px;
+}

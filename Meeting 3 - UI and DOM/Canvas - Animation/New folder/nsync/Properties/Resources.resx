@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accessRightsInsufficient" xml:space="preserve">
+    <value>Insufficient access rights to the folders.</value>
+  </data>
+  <data name="bothFoldersNotExist" xml:space="preserve">
+    <value>Both the selected folders do not exist.</value>
+  </data>
+  <data name="clearToolTip" xml:space="preserve">
+    <value>Clear Exclude List</value>
+  </data>
+  <data name="closeToolTip" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="defaultErrorMessage" xml:space="preserve">
+    <value>Please try again.</value>
+  </data>
+  <data name="excludeIconToolTip" xml:space="preserve">
+    <value>Drag &amp; Drop Files or Folders to Exclude</value>
+  </data>
+  <data name="excludeText" xml:space="preserve">
+    <value>Drag &amp; Drop Files or Folders to Exclude</value>
+  </data>
+  <data name="fileNotAccessible" xml:space="preserve">
+    <value>File(s) Open. Please Close File(s) And Try Again</value>
+  </data>
+  <data name="folderExplorerText" xml:space="preserve">
+    <value>Select a folder to synchronise with nsync.</value>
+  </data>
+  <data name="folderIconPath" xml:space="preserve">
+    <value>pack://siteoforigin:,,,/Resources/Icons/folder.png</value>
+  </data>
+  <data name="folderMissingIconPath" xml:space="preserve">
+    <value>pack://siteoforigin:,,,/Resources/Icons/folder_missing.png</value>
+  </data>
+  <data name="folderOnRemovableDiskRestored" xml:space="preserve">
+    <value>Your last synced folder pair on this removeable disk is restored.</value>
+  </data>
+  <data name="homeToolTip" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="insufficientDiskSpace" xml:space="preserve">
+    <value>Insufficient disk space</value>
+  </data>
+  <data name="leftFolderInsufficientDiskSpace" xml:space="preserve">
+    <value>Left folder has insufficient disk space.</value>
+  </data>
+  <data name="leftFolderNotExist" xml:space="preserve">
+    <value>The left folder does not exist.</value>
+  </data>
+  <data name="metaDataFileExtension" xml:space="preserve">
+    <value>.metadata</value>
+  </data>
+  <data name="metadataFileName" xml:space="preserve">
+    <value>filesync.metadata</value>
+  </data>
+  <data name="minimiseToolTip" xml:space="preserve">
+    <value>Minimise</value>
+  </data>
+  <data name="modifiedLeftPath" xml:space="preserve">
+    <value>nsync has modified the left folder path to help you sync to the correct place.</value>
+  </data>
+  <data name="modifiedRightPath" xml:space="preserve">
+    <value>nsync has modified the right folder path to help you sync to the correct place.</value>
+  </data>
+  <data name="nextToolTip" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="nullString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelIconToolTip" xml:space="preserve">
+    <value>Drag or Click to Add a Folder</value>
+  </data>
+  <data name="panelText" xml:space="preserve">
+    <value>Drag &amp; Drop Folders Here</value>
+  </data>
+  <data name="previewButtonToolTip" xml:space="preserve">
+    <value>Visual Preview</value>
+  </data>
+  <data name="restoreComplete" xml:space="preserve">
+    <value>Restore done!</value>
+  </data>
+  <data name="restoreToolTip" xml:space="preserve">
+    <value>Restore folder</value>
+  </data>
+  <data name="rightFolderInsufficientDiskSpace" xml:space="preserve">
+    <value>Right folder has insufficient disk space.</value>
+  </data>
+  <data name="rightFolderNotExist" xml:space="preserve">
+    <value>The right folder does not exist.</value>
+  </data>
+  <data name="settingsFilePath" xml:space="preserve">
+    <value>\nsync\settings.xml</value>
+  </data>
+  <data name="settingsToolTip" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="similarFolders" xml:space="preserve">
+    <value>The left and right folders cannot be similar.</value>
+  </data>
+  <data name="stopButtonToolTip" xml:space="preserve">
+    <value>Cancel Sync</value>
+  </data>
+  <data name="subfolderOfFolder" xml:space="preserve">
+    <value>Folders that are to be synchronized cannot be a subfolder of each other.</value>
+  </data>
+  <data name="syncButtonToolTip" xml:space="preserve">
+    <value>And Sync!</value>
+  </data>
+  <data name="syncComplete" xml:space="preserve">
+    <value>Sync done!</value>
+  </data>
+  <data name="synchronizedFolders" xml:space="preserve">
+    <value>Folders are already synchronized.</value>
+  </data>
+  <data name="syncTerminated" xml:space="preserve">
+    <value>Sync terminated!</value>
+  </data>
+  <data name="thumbdriveIconPath" xml:space="preserve">
+    <value>pack://siteoforigin:,,,/Resources/Icons/removabledrive.png</value>
+  </data>
+  <data name="trackBackFolderName" xml:space="preserve">
+    <value>_nsync_trackback</value>
+  </data>
+  <data name="trackBackMetaDataFileName" xml:space="preserve">
+    <value>_trackback.xml</value>
+  </data>
+  <data name="trackBackToolTip" xml:space="preserve">
+    <value>TrackBack</value>
+  </data>
+  <data name="folderIOException" xml:space="preserve">
+    <value>nsync is having problems accessing the folder. Please close any applications that are using this folder or free up more disk space.</value>
+  </data>
+  <data name="folderNotExists" xml:space="preserve">
+    <value>The folder has file(s)/folder(s) that do not exist.</value>
+  </data>
+  <data name="folderPathTooLong" xml:space="preserve">
+    <value>The folder has file(s)/folder(s) with path names exceeding the limit.</value>
+  </data>
+  <data name="folderRestrictedAccess" xml:space="preserve">
+    <value>The folder has file(s)/folder(s) with restricted file security permissions. Please close any applications that are using this folder.</value>
+  </data>
+  <data name="leftFolderIOException" xml:space="preserve">
+    <value>nsync is having problems accessing the left folder. Please close any applications that are using this folder or free up more disk space.</value>
+  </data>
+  <data name="leftFolderNotExistsForTrackBack" xml:space="preserve">
+    <value>The left folder has file(s)/folder(s) that do not exist.</value>
+  </data>
+  <data name="leftFolderPathTooLong" xml:space="preserve">
+    <value>The left folder has file(s)/folder(s) with path names exceeding the limit.</value>
+  </data>
+  <data name="leftFolderRestrictedAccess" xml:space="preserve">
+    <value>The left folder has file(s)/folder(s) with restricted file security permissions.</value>
+  </data>
+  <data name="rightFolderIOException" xml:space="preserve">
+    <value>nsync is having problems accessing the right folder. Please close any applications that are using this folder or free up more disk space.</value>
+  </data>
+  <data name="rightFolderNotExistsForTrackBack" xml:space="preserve">
+    <value>The right folder has file(s)/folder(s) that do not exist.</value>
+  </data>
+  <data name="rightFolderPathTooLong" xml:space="preserve">
+    <value>The right folder has file(s)/folder(s) with path names exceeding the limit.</value>
+  </data>
+  <data name="rightFolderRestrictedAccess" xml:space="preserve">
+    <value>The right folder has file(s)/folder(s) with restricted file security permissions.</value>
+  </data>
+  <data name="excludingFileTypesException" xml:space="preserve">
+    <value>Specified argument was out of the range of valid values.</value>
+  </data>
+  <data name="filesOpenedExceptionMessage" xml:space="preserve">
+    <value>The process cannot access the file because it is being used by another process</value>
+  </data>
+  <data name="logFolderPath" xml:space="preserve">
+    <value>\nsync\log\</value>
+  </data>
+  <data name="messageAccessDeniedError" xml:space="preserve">
+    <value>Access is denied. </value>
+  </data>
+  <data name="messageBackingUpFolders" xml:space="preserve">
+    <value>Backing up folders...</value>
+  </data>
+  <data name="messageErrorDetected" xml:space="preserve">
+    <value>Error detected</value>
+  </data>
+  <data name="messagePreparingFolders" xml:space="preserve">
+    <value>Preparing folders...</value>
+  </data>
+  <data name="messageSyncCompleted" xml:space="preserve">
+    <value>Sync completed</value>
+  </data>
+  <data name="messageSyncingFolders" xml:space="preserve">
+    <value>Syncing folders...</value>
+  </data>
+  <data name="messageSyncTerminated" xml:space="preserve">
+    <value>Sync terminated</value>
+  </data>
+  <data name="excludeDragDropMessage" xml:space="preserve">
+    <value>Drag &amp; drop files and folders to exclude.</value>
+  </data>
+  <data name="excludeFilesDescription" xml:space="preserve">
+    <value>Exclude All Files: </value>
+  </data>
+  <data name="excludeFileTypesDescription" xml:space="preserve">
+    <value>Exclude File Type: </value>
+  </data>
+  <data name="excludeFolderDescription" xml:space="preserve">
+    <value>Exclude Folder: </value>
+  </data>
+  <data name="excludeInvalidDescription" xml:space="preserve">
+    <value>Not in synchronized folders: </value>
+  </data>
+  <data name="excludeParentIncludedDescription" xml:space="preserve">
+    <value>Parent Folder Included: </value>
+  </data>
+  <data name="excludeRemoveMessage" xml:space="preserve">
+    <value>Click on entries to remove them from the exclude list.</value>
+  </data>
+  <data name="nsyncXMLFilename" xml:space="preserve">
+    <value>nsync.xml</value>
+  </data>
+  <data name="settingsXMLFilename" xml:space="preserve">
+    <value>settings.xml</value>
+  </data>
+  <data name="trackbackXMLFilename" xml:space="preserve">
+    <value>_trackback.xml</value>
+  </data>
+  <data name="debugFolderPath" xml:space="preserve">
+    <value>\nsync\debug\</value>
+  </data>
+  <data name="debugLoggerClosingMessage" xml:space="preserve">
+    <value>END OF DEBUG LOG</value>
+  </data>
+  <data name="getSystemInfoErrorMessage" xml:space="preserve">
+    <value>Invalid table or properties</value>
+  </data>
+  <data name="nsyncFolderPath" xml:space="preserve">
+    <value>\nsync\</value>
+  </data>
+  <data name="timeStampFormat" xml:space="preserve">
+    <value>yyyy-MM-dd hh.mm.ss tt</value>
+  </data>
+  <data name="excludeRootFolder" xml:space="preserve">
+    <value>Cannot Exclude Root Folder: </value>
+  </data>
+  <data name="messageLogFolderLocked" xml:space="preserve">
+    <value>Log Folder is Locked.\n Path : </value>
+  </data>
+  <data name="messageNsyncFolderLocked" xml:space="preserve">
+    <value>nsync Folder is Locked.\n Path : </value>
+  </data>
+  <data name="messageSettingsXmlLocked" xml:space="preserve">
+    <value>Settings File is Locked.\n Path : </value>
+  </data>
+  <data name="notApplicable" xml:space="preserve">
+    <value>n/a</value>
+  </data>
+  <data name="dateFormat" xml:space="preserve">
+    <value>yyyy-MM-dd</value>
+  </data>
+  <data name="leftFolderMRUPath" xml:space="preserve">
+    <value>/nsync/MRU/left1</value>
+  </data>
+  <data name="messageNoListView" xml:space="preserve">
+    <value>Error: No listview visible!</value>
+  </data>
+  <data name="messageRestoreCompleted" xml:space="preserve">
+    <value>Restore completed</value>
+  </data>
+  <data name="messageRestoringFolders" xml:space="preserve">
+    <value>Restoring folders...</value>
+  </data>
+  <data name="rightFolderMRUPath" xml:space="preserve">
+    <value>/nsync/MRU/right1</value>
+  </data>
+  <data name="timeFormat" xml:space="preserve">
+    <value>hh.mm.ss tt</value>
+  </data>
+  <data name="trackBackPath" xml:space="preserve">
+    <value>/nsync/TrackBack</value>
+  </data>
+  <data name="trackBackSessionPath" xml:space="preserve">
+    <value>/nsync/TrackBack/session</value>
+  </data>
+</root>

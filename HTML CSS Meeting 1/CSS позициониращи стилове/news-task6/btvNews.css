@@ -1,0 +1,82 @@
+div.wrapper
+{
+	background-image: url(btvBackground.png);
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	padding-top: 5px;
+	border-radius: 5px;
+	width: 685px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #337D8F;
+}
+
+ul.navigationMenu
+{
+	padding: 0;
+	
+}
+
+ul.navigationMenu li
+{
+	display: inline-block;
+	background-color: #4B5F67;
+	padding: 10px;
+	color: #8CA7B4;
+}
+
+section.allNews
+{
+	width: 264px;
+	height: 310px;
+	display: inline-block;
+}
+
+.selectedLink
+{
+	background-color: transparent !important;
+}
+
+.underlinedLink
+{
+	text-decoration: underline;
+}
+
+section.allNews div.selected
+{
+	font-family: Arial;
+	color: #FFF;
+	font-size: 11pt;
+	font-weight: bold;
+	background-color: #00968C;
+	height: 30px;
+	padding: 10px;
+}
+
+section.allNews div.news
+{
+	font-family: Arial;
+	color: #A4ADB0;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #354B54;
+
+}
+
+section.video
+{
+	display: inline-block;
+	width: 386px;
+	vertical-align: 25px;
+	margin: 0;
+	position: relative;
+	left: -4px;
+}
+
+.last
+{
+	border-style: none !important; 
+}

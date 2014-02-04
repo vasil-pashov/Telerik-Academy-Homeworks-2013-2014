@@ -1,0 +1,62 @@
+table
+{
+	border-collapse: collapse;
+	width: 395px;
+	
+}
+
+td
+{
+	vertical-align:text-top;
+	background-color: #595959;
+	padding:5px;
+	
+}
+
+span.support
+{
+	color: #E21016;
+}
+
+td.name
+{
+	color: #CECD8E;
+}
+
+td.email
+{
+	color: #CECD8E;
+}
+
+p.lastActionLink
+{
+	color: #CECD8E;
+}
+
+td.category
+{
+	color: #CCCCCC;
+	width: 160px;
+	font-style: italic;
+}
+
+td.ID
+{
+	color: #B3AFAE;
+	font-size: 16pt;
+}
+
+td.status
+{
+	color: #DE6A2B;
+}
+
+td.responseTime
+{
+	color: #AAAAAA;
+}
+
+td.lastAction
+{
+	color: #AAAAAA;
+}

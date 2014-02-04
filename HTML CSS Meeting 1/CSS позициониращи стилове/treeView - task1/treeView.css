@@ -1,0 +1,26 @@
+ul.mainList
+{
+	list-style: none;
+}
+
+ul.nested
+{
+	list-style: none;
+	color: grey;
+}
+
+ul.mainList li a
+{
+	color: black;
+}
+
+ul.mainList li ul
+{
+	display: none;
+	margin-left: -30px;
+}
+
+ul.mainList li:hover ul
+{
+	display: block;
+}

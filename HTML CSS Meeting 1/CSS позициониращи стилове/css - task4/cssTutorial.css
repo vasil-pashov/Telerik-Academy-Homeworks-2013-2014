@@ -1,0 +1,174 @@
+body
+{
+	background-color: #F1F1F1;
+}
+
+nav.tutorialLinks
+{
+	float: left;
+	width: 140px;
+	border-style: hidden;
+	display: inline-block;
+}
+
+nav.tutorialLinks section
+{
+	border-style: hidden;
+	display: block;
+}
+
+nav.tutorialLinks section h5
+{
+	font-family: Verdana;
+	color: #880000;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+
+nav.tutorialLinks section a
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+nav.tutorialLinks section a.home
+{
+	
+	background-image:url("homeImg.png");
+	background-repeat: no-repeat;
+	padding-left: 14px;
+	background-position: 0 0px;
+}
+
+nav.tutorialLinks section a.home h4
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+div.content
+{
+	box-sizing: border-box;
+	-moz-box-sizing:border-box; 
+	//position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #A8A8A8;
+	height: 590px;
+	width: 507px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.content h3
+{
+	font-family: Arial;
+}
+
+div.content button
+{	
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 8pt;
+	background-repeat: no-repeat;
+	border-style: solid;
+	border-color: #595959;
+	border-width: 1px;
+	height: 20px;
+	width: 105px;
+	background-color: white;
+}
+button.previous
+{	
+	background-image: url("backArrow.png");
+	background-position: 1% 50%;
+}
+
+button.next
+{	
+	background-image: url("nextArrow.png");
+	background-position: 98% 50%;
+}
+
+
+h4.section
+{
+	margin-top: 8px;
+	padding-left: 5px;
+	color: white;
+	background-color: #808080;
+	margin-bottom: 7px;
+}
+
+.cssPic
+{
+	float: left;
+	margin-right: 16px;
+}
+
+p.cssInfo
+{
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+a
+{
+	color: #9C2929;
+	font-size: 10pt;
+}
+
+p.articleText
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+p.link
+{
+	margin: 0px;
+}
+
+aside
+{
+	width: 140px;
+	border-style: hidden;
+	display: inline-block;
+}
+
+aside div
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #A8A8A8;
+	display: inline-block;
+	width: 140px;
+	text-align: center;
+	margin: 1px;
+}
+
+aside div input
+{
+	width: 80px;
+}
+
+aside div button
+{
+	width: 25px;
+	height: 22px;
+}
+
+aside h4.section
+{
+	margin: 0;
+}

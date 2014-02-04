@@ -1,0 +1,83 @@
+table.contacts
+{
+	border-collapse: collapse;
+}
+
+tr.header  td
+{
+	background-image: url("barBackground.png");
+	background-repeat:repeat-x;
+	background-position: 0 0;
+	height: 40px;
+	color: #E7F5DD;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-left: 7px;
+}
+
+td
+{
+	border-width: 2px;
+	border-style: outset;
+	border-color: #C2C0A6;
+	height: 50px;
+	font-family: Arial;
+	font-size: 14pt;
+	padding-left: 7px;
+}
+
+td.name
+{
+	width: 250px;
+}
+
+td.city
+{
+	width: 200px;
+}
+
+td.country
+{
+	width: 160px;
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	padding-left: 65px;
+	vertical-align: text-top;
+	padding-top: 10px;
+}
+
+td.isPrompted
+{
+	width: 135px;
+}
+
+td#germany
+{
+	background-image: url("germanFlag.png");
+}
+
+td#mexico
+{
+	background-image: url("mexicanFlag.png");
+}
+
+td#uk
+{
+	background-image: url("ukFlag.png");
+}
+
+tr.evenRow
+{
+	background-color: #ECECD8;
+}
+
+tr.middleRow td
+{
+	border-bottom-style: none;
+	border-top-style: none;
+}
+
+tr.lastRow td
+{
+	border-top-style: none;
+}

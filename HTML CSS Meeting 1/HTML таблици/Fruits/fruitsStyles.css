@@ -1,0 +1,15 @@
+h2.tableHeading
+{
+	font-style: italic;
+	text-align: center;
+}
+td.textContent
+{
+	font-size: 13pt;
+	width: 245px;
+}
+
+div.wrapper
+{
+	width: 500px;
+}

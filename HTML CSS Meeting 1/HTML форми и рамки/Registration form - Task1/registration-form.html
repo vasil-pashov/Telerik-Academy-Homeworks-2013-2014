@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="registration-form.css"/>
+	</head>
+	
+	<body>
+		<table class="registrationForm">
+			<tr>
+				<td class="category">Last Name</td>
+				<td colspan="3" class="information"><input type="text" placeholder="Nakov" class="name"/></td>
+			</tr>
+			<tr>
+				<td class="category">First Name</td>
+				<td colspan="3" class="information"><input type="text" placeholder="Svetlin" class="name"/></td>
+			</tr>
+			<tr>
+				<td class="category">Address</td>
+				<td colspan="3" class="information"><textarea class="address">17 Hristo Botev str. floor 3, apt. 12 </textarea></td>
+			</tr>
+			<tr>
+				<td class="category">City</td>
+				<td><input class="city" placeholder="Kaspichan"/></td>
+				<td class="category" id="state">State</td>
+				<td id="stateInfo"><input type="text" id="stateInfo"/></td>
+			</tr>
+			<tr>
+				<td class="category">ZIP/Postal Code</td>
+				<td colspan="3" class="information"><input type="number" placeholder="9325" class="postalCode"/></td>
+			</tr>
+			<tr>
+				<td class="category">Country</td>
+				<td colspan="3" class="information">
+					<select class="country">
+						<option autofocus="autofocus">Bulgaria</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="category">Phone (country code,
+				area code, number)</td>
+				<td colspan="3" class="information">(+<input type="number" class="phoneCodes"/> ) <input type="number" class="phoneCodes"/>
+				- <input type="number" class="phoneNumber"/></td>
+			</tr>
+			<tr>
+				<td class="category">E-mail</td>
+				<td  colspan="3" class="information"><input type="email" placeholder="nakov@kaspichan.org" class="email"></td>
+			</tr>
+			<tr>
+				<td class="category">Birth Date</td>
+				<td colspan="3" class="information">Month <input type="number" placeholder="06" class="date"/> Day <input type="number" placeholder="14" class="date"/>
+				Year (4 digit)<input type="number" placeholder="1980" class="year"/></td>
+			</tr>
+			<tr>
+				<td class="category">Gender</td>
+				<td colspan="3" class="information">
+					<select class="gender">
+						<option autofocus="autofocus">Male</option>
+						<option autofocus="autofocus">Female</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="category">Starting Date</td>
+				<td colspan="3" class="information"><input type="radio" id="spring" name="date"><label for="spring">Spring 2006</label>
+				<input type="radio" id="summer" name="date"><label for="summer">Summer 2006</label></td>
+			</tr>
+			<tr>
+				<td class="category">Comment/Questions</td>
+				<td colspan="3" class="information"><textarea class="comments">Please send me more information about the logging.</textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4" class="buttons"><button type="button">Submit</button> <button type="button">Clear This Form</button></td>
+			</tr>
+		</table>
+	</body>
+</html>

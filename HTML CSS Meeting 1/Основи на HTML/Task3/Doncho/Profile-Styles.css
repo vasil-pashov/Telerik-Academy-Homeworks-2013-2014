@@ -1,0 +1,29 @@
+body
+{
+	background-color: #CCECFF;
+}
+
+a.navigationLink
+{
+	color: #6199DF;
+	margin-right: 70px;
+}
+
+a.navigationLink:visited
+{
+	color: grey;
+}
+
+div.pageName
+{
+	color: #1A3264;
+	font-family: Calibri;
+	font-style: italic;
+}
+
+div.pageContent dl.friends
+{
+	color: #1A3264;
+	font-family: Calibri;
+	font-style: italic;
+}

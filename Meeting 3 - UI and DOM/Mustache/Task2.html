@@ -1,0 +1,119 @@
+<!-- for the last task we need Node.js!!! :( -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="class.js"></script>
+    <script src="mustache.js"></script>
+    <script src="jquery-2.0.3.min.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <hr />
+    <h2>Student's marks:(click each student's name to see his/her marks)</h2>
+    <div id="marks"></div>
+
+
+      <!-- ------------------CONTROLS------------------->
+    <script>
+        var controls = controls || {};
+        (function (c) {
+            var TableView = Class.create({
+                init: function (itemsSource) {
+                    if (!(itemsSource instanceof Array)) {
+                        throw "The itemsSource of a ListView must be an array!";
+                    }
+                    this.itemsSource = itemsSource;
+                },
+                render: function (template) {
+                    var table = document.createElement("table");
+
+                    var tbody = document.createElement("tbody");
+
+                    var thead = document.createElement("tr");
+
+                    thead.innerHTML += "<td>First Name</td><td>LastName</td><td>Age</td><td>Grade</td>";
+
+                    tbody.appendChild(thead);
+
+                    
+                    for (var i = 0; i < this.itemsSource.length; i++) {
+                        var item = this.itemsSource[i];
+
+                        var currentTr = document.createElement("tr");
+
+                        currentTr.innerHTML += template(item);
+
+                        tbody.appendChild(currentTr);
+                    }
+
+                    table.appendChild(tbody);
+                    return table.outerHTML;
+                }
+            });
+
+            var MarkView = Class.create({
+                init: function (itemsSource) {
+                    if (!(itemsSource instanceof Array)) {
+                        throw "The itemsSource of a ListView must be an array!";
+                    }
+                    this.itemsSource = itemsSource;
+                },
+                render: function (template) {
+                    var ul = document.createElement("ul");
+                    
+                    for (var i = 0; i < this.itemsSource.length; i++) {
+                        var content = this.itemsSource[i];
+
+                        ul.innerHTML += template(content);
+                    }
+
+                    return ul.outerHTML;
+                }
+            });
+
+            c.getTableView = function (itemsSource) {
+                return new TableView(itemsSource);
+            },
+            c.getMarks = function(itemsSource) {
+                return new MarkView(itemsSource);
+            }
+        }(controls || {}));
+
+    </script>
+
+
+
+     <script type="x-mustache-template" id="student-template">        
+         <td>{{FirstName}}</td>
+         <td>{{LastName}}</td>
+         <td>{{Grade}}</td>
+         <td>{{Age}}</td>
+        </script>
+
+    <script type="x-mustache-template" id="mark-template">        
+        <li>
+        {{Subject}} : {{Score}}
+        </li>
+        </script>
+
+
+    <script>
+
+  
+            function (students) { //success
+                var personTemplate = Mustache.compile(document.getElementById("student-template").innerHTML);
+
+                var listView = controls.getTableView(students);
+
+                var listViewHtml = listView.render(personTemplate);
+
+                document.getElementById("content").innerHTML = listViewHtml;
+
+
+            }
+    </script>
+
+</body>
+</html>

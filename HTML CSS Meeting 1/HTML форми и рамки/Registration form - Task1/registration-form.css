@@ -1,0 +1,125 @@
+table.registrationForm
+{
+	border-collapse: collapse;
+}
+
+table.registrationForm td
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #C9C9C9;
+	padding: 3px;
+	width: 120px;
+}
+
+td.category
+{
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: right;
+	font-family: Arial;
+}
+
+td.information
+{
+	width: 210px;
+	font-family: Arial;
+	font-size: 9pt;
+}
+
+td.buttons
+{
+	background-color: #D1EDE1;
+	text-align: center;
+}
+
+td#state
+{
+	width: 30px;
+}
+
+td#stateInfo
+{
+	width: 30px;
+}
+
+input
+{
+	height: 15px;
+	border-style: inset;
+}
+
+input.name
+{
+	width: 195px;
+}
+
+input.email
+{
+	width: 195px;
+}
+
+input.city
+{
+	width: 135px;
+}
+
+input.postalCode
+{
+	width: 55px;
+}
+
+input#stateInfo
+{
+	width: 25px;
+}
+
+input.phoneCodes
+{
+	width: 35px;
+}
+
+input.phoneNumber
+{
+	width: 90px;
+}
+
+input.date
+{
+	font-size: 8pt;
+	width: 15px;
+}
+
+input.year
+{
+	width: 37px;;
+}
+
+textarea.address
+{
+	border-style: inset;
+	resize: none;
+}
+
+textarea.comments
+{
+	border-style: inset;
+	resize: none;
+	height: 65px;
+	width: 195px;
+	font-family:"Times New Roman";
+	font-size: 10pt;
+}
+
+select.country
+{
+	border-style: inset;
+	width: 150px;
+}
+
+select.gender
+{
+	border-style: inset;
+	width: 70px;
+	font-size: 9pt;
+}

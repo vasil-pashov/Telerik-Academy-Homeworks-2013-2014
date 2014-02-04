@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="calculatorStyles.css"/>
+	</head>
+	
+	<body>
+		<div class="wrapper">
+			<div class="buttonsBar">
+				<span class="minimizeButton"></span>
+				<span class="restoreButton"></span>
+				<span class="closeButton"></span>
+			</div>
+			<div class="innerContent">
+				<div class="menuBar">
+					<span class="menuButton"><span class="menuButtonText">View</span></span>
+					<span class="menuButton"><span class="menuButtonText">Edit</span></span>
+					<span class="menuButton"><span class="menuButtonText">Help</span></span>
+				</div>
+				<div class="calculatorTable">
+					<div class="result"><textarea class="result"></textarea></div>
+					<div class="binaryWrapper">
+						<div class="binary">
+							<div class="byte">
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte last">0000</span>
+							</div>
+							<div class="bits">
+								<span class="bitNum">63</span>
+								<span class="bitNum second">47</span>
+								<span class="bitNum third">32</span>
+							</div>
+							<div class="byte">
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte">0000</span>
+								<span class="byte last">0000</span>
+							</div>
+							<div class="bits">
+								<span class="bitNum">31</span>
+								<span class="bitNum second">15</span>
+								<span class="bitNum third">0</span>
+							</div>
+						</div>
+					</div>
+					<div class="buttonsAndOptions">
+						<div class="activeButton numberRepresentation">
+							<span class="systems">
+								<input type="radio" name="system" value="Hex">Hex<br>
+								<input type="radio" name="system" value="Dec">Dec<br>
+								<input type="radio" name="system" value="Oct">Oct<br>
+								<input type="radio" name="system" value="Bin">Bin<br>
+							</span>
+							<span class="systems">
+								<input type="radio" name="word" value="Hex">Qword<br>
+								<input type="radio" name="word" value="Dec">Dword<br>
+								<input type="radio" name="word" value="Oct">Word<br>
+								<input type="radio" name="word" value="Bin">Byte<br>
+							</span>
+						</div>
+						<div class="buttons">
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Mod</span><span class="logicalHover">Mod </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							A </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton inactive"><span class="butName">
+							MC</span><span class="hover memmoryHover">MC </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton inactive"><span class="butName">
+							MR</span><span class="hover memmoryHover">MR </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton inactive"><span class="butName">
+							MS</span><span class="hover memmoryHover">MS </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton inactive"><span class="butName">
+							M+ </span><span class="hover memmoryHover">M+ </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton inactive"><span class="butName">
+							M- </span><span class="hover memmoryHover">M- </span></span></span>
+							
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							( </span><span class="logicalHover">( </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							) </span><span class="logicalHover">) </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							B </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							<img src="leftArrow.png" class="arrow"/> </span><span class="hover"><img src="leftArrowSelected.png" class="arrow"/> </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							CE </span><span class="hover">CE </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							C </span><span class="hover">C </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							&plusmn </span><span class="hover">&plusmn </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							&radic; </span></span></span>
+							
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							RoL </span><span class="logicalHover">RoL </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							RoR </span><span class="logicalHover">RoR </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							C </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							7 </span><span class="hover">7 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							8 </span><span class="hover">8 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							9 </span><span class="hover">9 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							/ </span><span class="hover">/ </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							% </span></span></span>
+							
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Or </span><span class="logicalHover">Or </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Xor </span><span class="logicalHover">Xor </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							D </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							4 </span><span class="hover">4 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							5 </span><span class="hover">5 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							6 </span><span class="hover">6 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							* </span><span class="hover">* </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							1/x </span></span></span>
+							
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Lsh </span><span class="logicalHover">Lsh </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Rsh </span><span class="logicalHover">Rsh </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							E </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							1 </span><span class="hover">1 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							2 </span><span class="hover">2 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton number"><span class="butName">
+							3 </span><span class="hover">3 </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							- </span><span class="hover">- </span></span></span>
+							<div class="equals"><span class="equalsWrapper" id="buttonWrapper"><span class="equals"><span class="butNameEquals">
+							=</span><span class="equalsHover">= </span></span></span></div>
+
+							
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							Not </span><span class="logicalHover">Not </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="logicalButtonName">
+							And </span><span class="logicalHover">And </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							F </span></span></span>
+							<span class="zeroWrapper" id="buttonWrapper"><span class="zeroButton"><span class="butNameZero">
+							0 </span><span class="zeroHover">0 </span></span></span>
+							<span class="activeButtonWrapper" id="inactiveWrapper"><span class="activeButton inactive"><span class="butName">
+							. </span></span></span>
+							<span class="activeButtonWrapper" id="buttonWrapper"><span class="activeButton"><span class="butName">
+							+ </span><span class="hover">+ </span></span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
